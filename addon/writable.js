@@ -10,7 +10,8 @@ export default function(getter, setterCallback) {
       return val;
     },
     set(val) {
-      return this._val = val;
+      this.set('this._val', val);
+      return this._val;
     }
   };
 
